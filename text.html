@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-анимации</title>
+</head>
+<body>
+  
+        <header class="clearfix" class="col-xs-12">
+            <a href="index.html" id="logo"><span class="pink">CSS</span> <i>анимации</i></a>
+            <nav id="mainnav">
+                <ul>
+                    <li class="navigation-first"><a href="index.html">На главную</a></li>
+                    <li><a href="Client.html">Наши статьи</a></li>
+                    <li><a href="Contacts.html">Контакты</a></li>
+                </ul>
+                </nav>
+        </header>        
+        <main class="col-md-8 col-lg-9">
+            <section class="ONas" id="clearfix" class="col-sm-6 col-md-12">
+                <article class="ONas-article">
+                 <h2><span class="pink">CSS </span> <i>переходы</i></h2>
+
+             <li id="ii">функции Безье</li> 
+                 <p >
+                   <br> ease	Функция по умолчанию, анимация начинается медленно, разгоняется быстро и замедляется в конце. Соответствует cubic-bezier(0.25,0.1,0.25,1).</br>
+                    <br>ease-in	Анимация начинается медленно, а затем плавно ускоряется в конце. Соответствует cubic-bezier(0.42,0,1,1).</br>
+                    <br>ease-out	Анимация начинается быстро и плавно замедляется в конце. Соответствует cubic-bezier(0,0,0.58,1).</br>
+                    <br>ease-in-out	Анимация медленно начинается и медленно заканчивается. Соответствует cubic-bezier(0.42,0,0.58,1).</br>
+                    cubic-bezier(x1, y1, x2, y2)	Позволяет вручную установить значения от 0 до 1. На этом сайте вы сможете построить любую траекторию скорости изменения анимации.пошаговые функции</br>
+                    <br>step-start	Задаёт пошаговую анимацию, разбивая анимацию на отрезки, изменения происходят в начале каждого шага. Вычисляется в steps(1, start).step-end</br>	
+                    <li id="ii">Пошаговая анимация, изменения происходят в конце каждого шага. Вычисляется в steps(1, end).</li>
+                    <br>steps(количество шагов,положение шага)	Ступенчатая временная функция, которая принимает два параметра. Первый параметр указывает количество интервалов в функции. Это должно быть положительное целое число больше 0, если вторым параметром не является</br>
+                    <br> jump-none — в этом случае оно должно быть положительным целым числом больше 1. Второй параметр, который является необязательным, указывает позицию шага — момент, в котором начинается анимация, используя одно из следующих значений:</br>
+                    <br>jump-start — первый шаг происходит при значении 0</br>
+                    <br>jump-end — последний шаг происходит при значении 1</br>
+                    <br>jump-none — все шаги происходят в пределах диапазона (0, 1)</br>
+                    <br>jump-both — первый шаг происходит при значении 0, последний — при значении 1</br>
+                    <br>start — ведет себя как jump-start</br>
+                    <br>end — ведет себя как jump-end</br>
+                    Со значением start анимация начинается в начале каждого шага, со значением end — в конце каждого шага с задержкой. Задержка вычисляется как результат деления времени анимации на количество шагов. Если второй параметр не указан, используется значение по умолчанию end.</br>
+                    
+                    <br>initial	Устанавливает значение свойства в значение по умолчанию.</br>
+                    <br>inherit	Наследует значение свойства от родительского элемента.</br>
+                </article>
+            </section>
+            
+        </main>
+    
+    <footer class="col">
+        
+        <p >&copy;Маковкин, Девольд,Губина,Боболь EUE</p>
+        <div >
+            <a href="https://instagram.com/ " target="_blank"><img src="img/instagram.png" class="footer_img"></a>
+            
+            <a href="https://vk.com/id191235547" target="_blank"><img src="img/vk.png" class="footer_img"></a>
+            
+            <a href="https://facebook.com/" target="_blank"><img src="img/facebook.png" class="footer_img"></a>
+        </div>
+    
+    </footer>
+</body>
+</html>

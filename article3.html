@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-анимации</title>
+</head>
+<body>
+   
+        <header class="clearfix">
+            <a href="index.html" id="logo"><span class="pink">CSS</span> <i>анимации</i></a>
+            <nav id="mainnav">
+                <ul>
+                    <li class="navigation-first"><a href="index.html">На главную</a></li>
+                    <li><a href="Client.html">Наши статьи</a></li>
+                    <li><a href="Contacts.html">Контакты</a></li>
+                </ul>
+                </nav>
+        </header>        
+        <main>
+            <section class="ONas" id="clearfix">
+               <article class="ONas-article">
+                <h2><span class="pink">Ключевые </span> <i>кадры</i></h2>
+
+                <p><font size="4" color="white" face="Arial"> Мы можем объединить несколько простых анимаций вместе, используя CSS-правило @keyframes.
+
+                    Оно определяет «имя» анимации и правила: что, когда и где анимировать. После этого можно использовать свойство animation, чтобы назначить анимацию на элемент и определить её дополнительные параметры.
+                    
+                    Ниже приведён пример с пояснениями:</p> 
+                   
+
+<style>
+  @keyframes go-left-right {
+    from { left: 0px; }      
+    to { left: calc(100% - 50px); }
+  }
+
+  .progress {
+    animation: go-left-right 3s infinite alternate;
+    
+
+    position: relative;
+    border: 2px solid green;
+    width: 50px;
+    height: 20px;
+    background: lime;
+  }
+</style>
+                </article>
+            </section>
+            <h1 class="h1--invisible">О нас</h1>
+        </main>
+   
+    <footer>
+        
+        <p class="footer_block">&copy;Маковкин, Девольд,Губина,Боболь EUE</font></p>
+        <div class="footer_icons">
+            <a href="https://instagram.com/ " target="_blank"><img src="img/instagram.png" class="footer_img"></a>
+            
+            <a href="https://vk.com/id191235547" target="_blank"><img src="img/vk.png" class="footer_img"></a>
+            
+            <a href="https://facebook.com/" target="_blank"><img src="img/facebook.png" class="footer_img"></a>
+        </div>
+    </footer>
+</body>
+</html>
